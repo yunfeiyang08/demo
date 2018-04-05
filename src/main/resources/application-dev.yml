@@ -3,6 +3,11 @@ server:
   servlet:
     context-path: /demo
 spring:
+  datasource:
+    url: jdbc:mariadb://192.168.2.101:3306/sbdemo
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: fly8604
+    password: citic
   freemarker:
     cache: false
     charset: UTF-8
