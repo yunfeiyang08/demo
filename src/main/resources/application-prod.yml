@@ -1,0 +1,18 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /demo
+spring:
+  freemarker:
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
+mybatis:
+  mapper-locations: classpath:com/example/mapper/*.xml
+  type-aliases-package: com.example.demo.domain
