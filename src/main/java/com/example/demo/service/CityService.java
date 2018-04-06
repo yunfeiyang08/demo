@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface CityService {
 
-    List<City> findAll();
+    List<City> findAll(int pageNum, int pageSize);
 }
