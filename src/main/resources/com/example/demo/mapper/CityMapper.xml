@@ -16,7 +16,7 @@
     from city
     where id = #{id,jdbcType=INTEGER}
   </select>
-  <select id="findAll" resultType="com.example.demo.domain.City">
+  <select id="findAll" resultMap="BaseResultMap">
     select * from city
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
